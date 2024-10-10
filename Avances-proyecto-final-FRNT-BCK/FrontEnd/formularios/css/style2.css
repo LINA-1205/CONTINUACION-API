@@ -1,0 +1,13 @@
+body {
+    background: linear-gradient(to right,);
+    height: 100vh;
+}
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    max-width: 600px;
+    margin-top: 50px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech4Good | Formulario Ingreso</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <div class="mt-4">
+        <h2 class="text-center text-primary">¿Quieres aportar a una buena causa y donar un dispositivo que no te sirva?</h2>
+    </div>
+    <div class="form-container">
+        <h2 class="text-center">Ingresa los Datos</h2>
+        <form method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="nombreUsuario">Nombre</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario" required>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="form-row">
+
+                <div class="form-group col-md-6">
+                    <label for="numeroDocumento">Número de Documento</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-id-card"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="numeroDocumento" name="numeroDocumento" required>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="telefonoUsuario">Teléfono</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                        </div>
+                        <input type="tel" class="form-control" id="telefonoUsuario" name="telefonoUsuario" required>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="tipoDeUsuario">Tipo De Usuario</label>
+                    <select class="form-control" id="tipoUsuario" name="tipoDeUsuario">
+                        <option selected>Selecciona...</option>
+                        <option value="1">Donante</option>
+                        <option value="2">Administrador</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="Tipo_Producto">Productos a Donar</label>
+                    <select class="form-control" id="tipoProducto" name="Tipo_Producto">
+                        <option selected>Selecciona...</option>
+                        <option value="1">Tablet</option>
+                        <option value="2">Computador de escritorio</option>
+                        <option value="3">Portátil</option>
+                        <option value="4">Ipad</option>
+                        <option value="5">Televisor</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="Ubicacion_Producto">Ubicación del producto</label>
+                    <select class="form-control" id="ubicacionProducto" name="Ubicacion_Producto">
+                        <option selected>Selecciona...</option>
+                        <option value="1">Universidad privada</option>
+                        <option value="2">Universidad pública</option>
+                        <option value="3">Institución educativa privada</option>
+                        <option value="4">Institución educativa pública</option>
+                        <option value="5">Fundación</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="Estado_Producto">Estado del producto</label>
+                    <select class="form-control" id="estadoProducto" name="Estado_Producto">
+                        <option selected>Selecciona...</option>
+                        <option value="1">Nuevo</option>
+                        <option value="2">Usado</option>
+                        <option value="3">Reparable</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" id="botonRegistrar" name="botonRegistrar" onclick="registrarUsuarios()">Enviar</button>
+        </form>
+    </div>
+
+    <nav>
+        <a href="./index.html">Inicio de sesion</a>
+        <a href="./Tabla/tabla.html">Ir a la tabla</a>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Formulario.js"></script>
+</body>
+</html>
